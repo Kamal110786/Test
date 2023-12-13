@@ -2,7 +2,7 @@
 with store_final as
 (
 select *
-from {{ ref('store_tbl_2023') }}
+from {{ ref('STORE_TBL_2023') }}
 ),
 store_sales_final as
 (select *
