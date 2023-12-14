@@ -4,5 +4,6 @@ def model(dbt,session):
     df=session.sql("select * from NEWSCH.PRODUCT")
 
     df_filter=df.filter(F.col("REGION")=='West')
+    df_final=df_filter.group_by("STATE").agg(F.sum(F.col('GLOBAL_SALES')))
 
-    return df_filter
+    return df_final
