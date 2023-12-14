@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: sfresh
+    database: NEWDB
+    schema: NEWSCH
+    tables:
+      - name: EMPLOYEE
+    freshness: 
+          warn_after: {count: 20, period: minute}
+          error_after: {count: 30, period: hour}
+    loaded_at_field: Loaded_DT
