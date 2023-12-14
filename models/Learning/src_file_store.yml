@@ -1,0 +1,11 @@
+
+
+version: 2
+
+sources:
+  - name: test_NEWSCH
+    database: NEWDB
+    schema: NEWSCH
+    tables:
+      - name: STORE_2023
+      - name: Store_Sales_2023
