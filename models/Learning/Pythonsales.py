@@ -5,4 +5,4 @@ def model(dbt,session):
 
     df_filter=df.filter(F.col("REGION")=='West')
 
-    return df
+    return df_filter
